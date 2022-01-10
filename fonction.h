@@ -29,7 +29,9 @@ void flagMine(matrix *tableau, bool dp, int i, int j);
 
 bool dig(matrix *table, matrix *mineAround, int i, int j, int &n);
 
-int digRecursive(matrix *table, matrix *mineAround, int i, int j,int n);
+int digRecursive(matrix *table, matrix *mineAround, int i, int j,int &n);
+
+void printerTableInit(matrix *tableau);
 
 
 

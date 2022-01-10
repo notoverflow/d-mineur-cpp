@@ -215,6 +215,7 @@ bool dig(matrix *table, matrix *mineAround, int i, int j, int &n) {
     }else if (i > table->line or j > table->column) {
         cout << "\n this box doesn't exist";
         return true;
+
     } else if (table->T[i][j] == 3 or table->T[i][j] == 4) {
         cout << "\n can't dig this box, there is a flag";
         return true;
@@ -223,12 +224,9 @@ bool dig(matrix *table, matrix *mineAround, int i, int j, int &n) {
         cout << "\n can't dig this box, already dig";
 
     } else if (table->T[i][j] == 0) {
-        n++;
-        table->T[i][j] = 1;
-        if (mineAround->T[i][j] == 0) {
-            digRecursive(table, mineAround, i, j,n);
-        }
+            digRecursive(table, mineAround, i+1, j,n);
         return true;
+
     }
 
     return false;
@@ -245,7 +243,7 @@ bool dig(matrix *table, matrix *mineAround, int i, int j, int &n) {
  * @param n number of mine found
  * @return 0: if the box doesn't exist \n 1: if the box is flag \n 2: if the box is already dig \n 3: true \n 4:false
  */
-int digRecursive(matrix *table, matrix *mineAround, int i, int j,int n) {
+int digRecursive(matrix *table, matrix *mineAround, int i, int j,int &n) {
 
     if (i < 0 or j < 0 or i >= table->line or j >= table->column) {
         return 0;
@@ -253,9 +251,8 @@ int digRecursive(matrix *table, matrix *mineAround, int i, int j,int n) {
         return 1;
     } else if (table->T[i][j] == 1) {
         return 2;
-    } else {
-
-        table->T[i][j] = 1;
+    } else if(table->T[i][j]==0) {
+        table->T[i][j]= 1;
         n++;
         if (mineAround->T[i][j] == 0) {
 
@@ -272,8 +269,29 @@ int digRecursive(matrix *table, matrix *mineAround, int i, int j,int n) {
 
 
     }
+
+
     return 3;
 }
+
+void printerTableInit(matrix *tableau){
+    cout << "   ";
+    for (int j = 0; j < tableau->column; ++j) {
+        printf("%1d ", j );
+
+    }
+    cout << "\n";
+    for (int i = 0; i < tableau->line; ++i) {
+        printf("%2d ", i );
+        for (int j = 0; j < tableau->column; ++j) {
+            cout << tableau->T[i][j] << " ";
+        }
+        cout << "\n";
+    }
+
+
+}
+
 
 
 
