@@ -109,6 +109,7 @@ int main() {
 
 
     matrix around = mineAround(&game);
+    cout << "\n\n\n";
 
     while (mineFound != nbLine*nbColumn- nbMine) {
 

@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__Demineur__Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/bin/cmake --regenerate-during-build -S"/home/notoverflow/Desktop/PROJET/CPP/Demineur " -B"/home/notoverflow/Desktop/PROJET/CPP/Demineur /cmake-build-debug"
+  command = /home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp -B/home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

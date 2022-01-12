@@ -230,7 +230,6 @@ bool dig(matrix *table, matrix *mineAround, int i, int j, int &n) {
     }
 
     return false;
-
 }
 
 
@@ -267,9 +266,7 @@ int digRecursive(matrix *table, matrix *mineAround, int i, int j,int &n) {
             digRecursive(table, mineAround, i, j - 1, n);
         }
 
-
     }
-
 
     return 3;
 }

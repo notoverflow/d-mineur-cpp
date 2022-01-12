@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/notoverflow/Desktop/PROJET/CPP/Demineur$ /cmake-build-debug/
+cmake_ninja_workdir = /home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/notoverflow/Desktop/PROJET/CPP/Demineur /cmake-build-debug" && /home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/bin/cmake --regenerate-during-build -S"/home/notoverflow/Desktop/PROJET/CPP/Demineur " -B"/home/notoverflow/Desktop/PROJET/CPP/Demineur /cmake-build-debug"
+  COMMAND = cd /home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/cmake-build-debug && /home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp -B/home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/notoverflow/Desktop/PROJET/CPP/Demineur /cmake-build-debug" && /home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/cmake-build-debug && /home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -72,7 +72,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_Demineur_: phony || CMakeFiles/Demineur_.dir
 
-build CMakeFiles/Demineur_.dir/main.cpp.o: CXX_COMPILER__Demineur__Debug /home/notoverflow/Desktop/PROJET/CPP/Demineur$ /main.cpp || cmake_object_order_depends_target_Demineur_
+build CMakeFiles/Demineur_.dir/main.cpp.o: CXX_COMPILER__Demineur__Debug /home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/main.cpp || cmake_object_order_depends_target_Demineur_
   DEP_FILE = CMakeFiles/Demineur_.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/Demineur_.dir
@@ -80,7 +80,7 @@ build CMakeFiles/Demineur_.dir/main.cpp.o: CXX_COMPILER__Demineur__Debug /home/n
   TARGET_COMPILE_PDB = CMakeFiles/Demineur_.dir/
   TARGET_PDB = Demineur_.pdb
 
-build CMakeFiles/Demineur_.dir/fonction.cpp.o: CXX_COMPILER__Demineur__Debug /home/notoverflow/Desktop/PROJET/CPP/Demineur$ /fonction.cpp || cmake_object_order_depends_target_Demineur_
+build CMakeFiles/Demineur_.dir/fonction.cpp.o: CXX_COMPILER__Demineur__Debug /home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/fonction.cpp || cmake_object_order_depends_target_Demineur_
   DEP_FILE = CMakeFiles/Demineur_.dir/fonction.cpp.o.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/Demineur_.dir
@@ -114,7 +114,7 @@ build Demineur_: CXX_EXECUTABLE_LINKER__Demineur__Debug CMakeFiles/Demineur_.dir
 # =============================================================================
 
 #############################################
-# Folder: /home/notoverflow/Desktop/PROJET/CPP/Demineur /cmake-build-debug
+# Folder: /home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/cmake-build-debug
 
 build all: phony Demineur_
 

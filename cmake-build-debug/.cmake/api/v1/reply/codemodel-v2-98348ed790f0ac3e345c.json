@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/notoverflow/Desktop/PROJET/CPP/Demineur /cmake-build-debug",
-		"source" : "/home/notoverflow/Desktop/PROJET/CPP/Demineur "
+		"build" : "/home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/cmake-build-debug",
+		"source" : "/home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp"
 	},
 	"version" : 
 	{

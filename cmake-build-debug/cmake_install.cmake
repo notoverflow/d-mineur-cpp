@@ -1,4 +1,4 @@
-# Install script for directory: /home/notoverflow/Desktop/PROJET/CPP/Demineur 
+# Install script for directory: /home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/notoverflow/Desktop/PROJET/CPP/Demineur /cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/notoverflow/Desktop/PROJET/CPP/d-mineur-cpp/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
