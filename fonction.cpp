@@ -224,7 +224,7 @@ bool dig(matrix *table, matrix *mineAround, int i, int j, int &n) {
         cout << "\n can't dig this box, already dig";
 
     } else if (table->T[i][j] == 0) {
-            digRecursive(table, mineAround, i+1, j,n);
+            digRecursive(table, mineAround, i, j,n);
         return true;
 
     }

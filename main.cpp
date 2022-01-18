@@ -116,7 +116,7 @@ int main() {
 
         printerTable(&game, &around);
 
-        cout << "what do you want make : \n f : put a flag \n t : take off a flaf \n d : dig a box \n";
+        cout << "what do you do : \n f : put a flag \n t : take off a flaf \n d : dig a box \n";
 
 
         do {
